@@ -17,5 +17,7 @@
 
 ### Install/Uninstall:
 Drop netutils.dll inside the Spotify installation folder (next to Spotify.exe).
+
 The default Spotify installation location is: C:\Users\<username>\AppData\Roaming\Spotify
+
 To uninstall, simply delete netutils.dll.
