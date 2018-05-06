@@ -2,7 +2,7 @@
 
 ## Video, audio & banner adblock/skip for Spotify
 
-**Current Version:** 0.2
+**Current Version:** 0.3
 
 ### Features:
 * Windows only
