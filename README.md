@@ -2,18 +2,16 @@
 
 ## Video, audio & banner adblock/skip for Spotify
 
-**Current Version:** 0.1
+**Current Version:** 0.2
 
 ### Features:
 * Windows only
 * Set and forget
-* Blocks all banner ads within the app
-* Blocks all video ads within the app
+* Blocks all banner/video/audio ads within the app
 * Unlocks the skip function for any track
 
 ### Known Issues:
-* Videos within public playlists curated by Spotify will not play
-* Spotify Premium audio ads *might* play, however these can be skipped (by clicking the Next button) whereas normally they can't
+* Videos within playlists will not play
 
 ### Install/Uninstall:
 Drop netutils.dll inside the Spotify installation folder (next to Spotify.exe).
