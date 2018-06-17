@@ -2,7 +2,11 @@
 
 ## Video, audio & banner adblock/skip for Spotify
 
-**Current Version:** 0.4
+**Current Version:** 0.5
+
+**Last tested version:** 1.0.82.447
+
+This mod is designed to work with any version update. Please create an issue if it breaks.
 
 ### Features:
 * Windows only
