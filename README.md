@@ -14,9 +14,6 @@ This mod is designed to work with any version update. Please create an issue if 
 * Blocks all banner/video/audio ads within the app
 * Unlocks the skip function for any track
 
-### Known Issues:
-* Videos within playlists will not play
-
 ### Install/Uninstall:
 [Download](https://github.com/master131/BlockTheSpot/raw/master/netutils.dll) and drop netutils.dll inside the Spotify installation folder (next to Spotify.exe).
 
