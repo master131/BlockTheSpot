@@ -17,7 +17,7 @@ This mod is designed to work with any version update. Please create an issue if 
 ### Install/Uninstall:
 
 #### Easy Installation:
-[Download](https://github.com/master131/BlockTheSpot/raw/master/install.bat) and run install.bat.
+[Download](https://github.com/master131/BlockTheSpot/raw/master/install.bat) and run install.bat. You don't need to download any other file.
 
 #### Manual Installation:
 [Download](https://github.com/master131/BlockTheSpot/raw/master/netutils.dll) and drop netutils.dll inside the Spotify installation folder (next to Spotify.exe).
@@ -25,4 +25,4 @@ This mod is designed to work with any version update. Please create an issue if 
 The default Spotify installation location is: C:\Users&#92;&lt;username&gt;\AppData\Roaming\Spotify
 
 #### Uninstall:
-To uninstall, simply delete netutils.dll.
+To uninstall, simply delete netutils.dll from your Spotify installation (see above for the location).
