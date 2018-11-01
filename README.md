@@ -2,9 +2,9 @@
 
 ## Video, audio & banner adblock/skip for Spotify
 
-**Current Version:** 0.10
+**Current Version:** 0.11
 
-**Last updated:** 29th October 2018
+**Last updated:** 1st November 2018
 
 **Last tested version:** 1.0.92.390
 
