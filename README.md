@@ -19,7 +19,9 @@ This mod is designed to work with any version update. Please create an issue if 
 ### Install/Uninstall:
 
 #### Easy Installation:
-[Download](https://github.com/master131/BlockTheSpot/raw/master/install.bat) and run install.bat. You don't need to download any other file.
+[Download](https://github.com/master131/BlockTheSpot/raw/master/install.bat) and run install.bat. You don't need to download any other file. 
+
+PS - It's not encrypted at all, it's a batch file with the mod embedded at the end (see the "MZ" header). You can always use the manual installation method.
 
 #### Manual Installation:
 [Download](https://github.com/master131/BlockTheSpot/raw/master/netutils.dll) and drop netutils.dll inside the Spotify installation folder (next to Spotify.exe).
