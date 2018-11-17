@@ -26,7 +26,7 @@ PS - It's not encrypted at all, it's a batch file with the mod embedded at the e
 #### Manual Installation:
 [Download](https://github.com/master131/BlockTheSpot/raw/master/netutils.dll) and drop netutils.dll inside the Spotify installation folder (next to Spotify.exe).
 
-The default Spotify installation location is: C:\Users&#92;&lt;username&gt;\AppData\Roaming\Spotify
+The default Spotify installation location is: %APPDATA%/Spotify (copy and paste into Explorer address bar)
 
 #### Uninstall:
 To uninstall, simply delete netutils.dll from your Spotify installation (see above for the location).
