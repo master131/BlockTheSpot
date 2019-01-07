@@ -16,6 +16,8 @@ This mod is designed to work with any version update. Please create an issue if 
 * Blocks all banner/video/audio ads within the app
 * Unlocks the skip function for any track
 
+This mod is for the [**Desktop release**](https://www.spotify.com/download/windows/) of Spotify on Windows and **not the Microsoft Store version**.
+
 ### Install/Uninstall:
 
 #### Easy Installation:
