@@ -6,7 +6,7 @@
 
 **Last updated:** 8th January 2018
 
-**Last tested version:** 1.0.96.181
+**Last tested version:** 1.0.99.250
 
 This mod is designed to work with any version update. Please create an issue if it breaks.
 
@@ -14,6 +14,7 @@ This mod is designed to work with any version update. Please create an issue if 
 * Windows only
 * Set and forget
 * Blocks all banner/video/audio ads within the app
+* Retains friend and vertical video functionality
 * Unlocks the skip function for any track
 
 :warning: This mod is for the [**Desktop release**](https://www.spotify.com/download/windows/) of Spotify on Windows and **not the Microsoft Store version**.
