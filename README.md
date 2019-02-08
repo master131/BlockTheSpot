@@ -4,7 +4,7 @@
 
 **Current Version:** 0.12
 
-**Last updated:** 8th January 2018
+**Last updated:** 8th January 2019
 
 **Last tested version:** 1.0.99.250
 
