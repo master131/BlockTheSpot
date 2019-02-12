@@ -6,7 +6,7 @@
 
 **Last updated:** 8th January 2019
 
-**Last tested version:** 1.0.99.250
+**Last tested version:** 1.1.0.237.g378f6f25
 
 This mod is designed to work with any version update. Please create an issue if it breaks.
 
