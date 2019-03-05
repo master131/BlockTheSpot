@@ -2,11 +2,11 @@
 
 ## Video, audio & banner adblock/skip for Spotify
 
-**Current Version:** 0.12
+**Current Version:** 0.13
 
-**Last updated:** 8th January 2019
+**Last updated:** 5th March 2019
 
-**Last tested version:** 1.1.0.237.g378f6f25
+**Last tested version:** 1.1.1.348.g9064793a
 
 This mod is designed to work with any version update. Please create an issue if it breaks.
 
@@ -14,7 +14,7 @@ This mod is designed to work with any version update. Please create an issue if 
 * Windows only
 * Set and forget
 * Blocks all banner/video/audio ads within the app
-* Retains friend and vertical video functionality
+* Retains friend, vertical video and radio functionality
 * Unlocks the skip function for any track
 
 :warning: This mod is for the [**Desktop release**](https://www.spotify.com/download/windows/) of Spotify on Windows and **not the Microsoft Store version**.

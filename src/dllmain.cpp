@@ -9,6 +9,7 @@
 
 #pragma comment(lib, "Ws2_32.lib")
 #pragma comment(lib, "Psapi.lib")
+#pragma comment(lib, "Version.lib")
 
 typedef int (WSAAPI* _getaddrinfo)(
 	_In_opt_       PCSTR      pNodeName,
@@ -452,6 +453,56 @@ void WriteAll(HMODULE hModule, MODULEINFO mInfo)
 	}
 }
 
+typedef struct
+{
+	DWORD dwMajor;
+	DWORD dwMinor;
+	DWORD dwBuild;
+	DWORD dwRevision;
+} version_t;
+
+typedef struct {
+	WORD             wLength;
+	WORD             wValueLength;
+	WORD             wType;
+	WCHAR            szKey[16];
+	WORD             Padding1;
+	VS_FIXEDFILEINFO Value;
+	WORD             Padding2;
+	WORD             Children;
+} VS_VERSIONINFO;
+
+BOOL GetFileVersionInfo(version_t* v)
+{
+	BOOL ok = FALSE;
+	WCHAR moduleFilePath[MAX_PATH];
+	DWORD verHandle;
+	GetModuleFileName(GetModuleHandle(NULL), moduleFilePath, MAX_PATH);
+	DWORD verSize = GetFileVersionInfoSize(moduleFilePath, &verHandle);
+	if (verSize)
+	{
+		LPVOID verBuffer;
+		UINT size;
+		LPVOID verData = new char[verSize];
+		if (GetFileVersionInfo(moduleFilePath, verHandle, verSize, verData) &&
+			VerQueryValueA(verData, "\\", &verBuffer, &size) &&
+			size)
+		{
+			VS_VERSIONINFO *verInfo = (VS_VERSIONINFO *) verData;
+			if (verInfo->Value.dwSignature == 0xfeef04bd)
+			{
+				v->dwMajor = verInfo->Value.dwFileVersionMS >> 16 & 0xffff;
+				v->dwMinor = verInfo->Value.dwFileVersionMS & 0xffff;
+				v->dwBuild = verInfo->Value.dwFileVersionLS >> 16 & 0xffff;
+				v->dwRevision = verInfo->Value.dwFileVersionLS & 0xffff;
+				ok = TRUE;
+			}
+		}
+		delete (char*) verData;
+	}
+	return ok;
+}
+
 DWORD WINAPI MainThread(LPVOID)
 {
 	// Block known ad hosts via function hooks
@@ -474,11 +525,16 @@ DWORD WINAPI MainThread(LPVOID)
 		}
 
 		// Perform fallback patches (just in-case the main method fails)
-		__try {
-			Patch(hModule, mInfo);
-		}
-		__except (EXCEPTION_EXECUTE_HANDLER)
+		// Only allow for version 1.1.0.xx and below
+		version_t v;
+		if (GetFileVersionInfo(&v) && v.dwMajor <= 1 && v.dwMinor <= 1 && v.dwBuild <= 0)
 		{
+			__try {
+				Patch(hModule, mInfo);
+			}
+			__except (EXCEPTION_EXECUTE_HANDLER)
+			{
+			}
 		}
 
 		// Perform main ad patch
