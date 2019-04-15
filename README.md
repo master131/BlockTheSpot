@@ -8,7 +8,7 @@
 
 **Last tested version:** 1.1.4.197.g92d52c4f
 
-#### Important Notice
+### Important Notice
 
 If you are using Spotify 1.1.5.xxx or newer, please use run the automatic downgrade script [here](https://github.com/master131/BlockTheSpot/raw/master/downgrade.bat) which will downgrade to 1.1.4.197.g92d52c4f and also disable auto-update. Thanks @CHEF-KOCH.
 
