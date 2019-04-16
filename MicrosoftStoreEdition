@@ -1,0 +1,22 @@
+BlockTheSpot by master131 on Microsoft Store Edition? YES!
+I found this way alone. By 7evenlxrd ;)
+
+Requiments: 
+1. netutils.dll (this is BlockTheSpot)
+2. You need Ubuntu (installed on disk or live cd/usb doesn't matters).
+Steps:
+1. Run Ubuntu
+2. Run File Explorer (in ubuntu), click on Other Locations then click on your disk with Windows 10.
+3. Go to where is a BlockTheSpot (netutils.dll) and copy this
+4. Go to Program Files, double click WindowsApps.
+5. Find a Spotify folder (SpotifyAB.SpotifyMusic_ and something)
+6. Go to Properties, Permissons and give all permissions (create and delete files)
+7. Paste BlockTheSpot (netutils.dll) to Spotify folder.
+8. Restart to Windows 10.
+
+Enjoy ;)
+
+Links:
+Ubuntu: https://www.ubuntu.com/download/desktop
+UUI (to make live usb): https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/
+BlockTheSpot: https://github.com/master131/BlockTheSpot
