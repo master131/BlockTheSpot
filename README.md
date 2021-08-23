@@ -2,6 +2,14 @@
 
 ## Video, audio & banner adblock/skip for Spotify
 
+### :warning: This repository is no longer maintained :warning:
+
+Please see the below fork which is still being updated:
+
+https://github.com/mrpond/BlockTheSpot
+
+---
+
 **Current Version:** 0.13
 
 **Last updated:** 5th March 2019
