@@ -4,9 +4,9 @@
 
 ### :warning: This repository is no longer maintained :warning:
 
-Please see the below fork which is still being updated:
+BlockTheSpot has been superceeded by SpotX - thanks to the community for it's ongoing development:
 
-https://github.com/mrpond/BlockTheSpot
+https://github.com/SpotX-CLI/SpotX-Win
 
 ---
 
